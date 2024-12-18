@@ -1,0 +1,199 @@
+/* style.css */
+
+/* 通用样式 */
+body {
+    margin: 0;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #007bff;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Form Section */
+.form-section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.primary-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Table Section */
+.result-section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: 700;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e53935;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 0.9rem;
+}
+.primary-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* 略微放大 */
+}
+
+.primary-btn:active {
+    transform: scale(0.95); /* 点击时缩小 */
+}
+.form-section {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: bounceIn 0.6s ease-out forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05); /* 略微放大 */
+    }
+    100% {
+        opacity: 1; /* 保持完全显示 */
+        transform: scale(1); /* 恢复正常大小 */
+    }
+}
+.total-cost {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-cost h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+
